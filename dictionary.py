@@ -29,5 +29,5 @@ a.items()
 a.get()
 # get(x) :  x라는 Key에 대응되는 Value를 리턴
 
-"홍길동" in a 
+# "홍길동" in a 
 # true, false 리턴
