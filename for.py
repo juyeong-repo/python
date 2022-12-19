@@ -36,7 +36,7 @@ for s, i in enumerate(student, start=1):
     print("{} 이름: {} 점수: {}".format(s, name, value))
     
 
-# comprehension
+# comprehension (list+for문)
 
 result = []
 for num in range(1,6):
