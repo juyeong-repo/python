@@ -44,5 +44,19 @@ else:
     
 
 # 입력한 숫자가 소수인지 - 방법2 
+prime_list = [False, False] + [True] * (num - 1)
+primes = []
 
+for i in range(2, num+1):
+    if prime_list[i] :
+        for j in range(2*i, num+1, i):
+            prime_list[j] = False
+            
+            
+primes = [i for i in range(2, num+1) if prime_list[i] == True]
+print(primes)
 
+if num in primes: 
+    print("소수입니다.")
+else: 
+    print("소수가 아닙니다.")
