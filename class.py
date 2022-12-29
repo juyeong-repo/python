@@ -20,7 +20,7 @@ fish.show_name()
 
 
 
-class FishCakeMaker: 
+class FishCakeMaker2: 
     def __init__(self, **kwargs):
         self._size = 10
         self._flavor = "팥"
@@ -44,7 +44,7 @@ class FishCakeMaker:
 
 
 # 상속
-class MarketGoods (FishCakeMaker):
+class MarketGoods (FishCakeMaker2):
     def __init__(self, margin = 1000, **kwargs):
         super().__init__(**kwargs)
         self._market_price = self._price + margin
